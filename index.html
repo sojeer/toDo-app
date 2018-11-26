@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Materialize Color Game</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+
+
+	
+	<body>
+		
+		<section>
+			
+				
+					<div class="app-container card">
+						<header>
+							<h1 class="animated fadeInUp">to do</h1>
+							<button class="btn orange clear-btn animated fadeIn">clear finished</button>					
+						</header>
+						
+						<section class="add-section">
+							<form class="col s12">
+								<div class="row">
+								<div class="input-field col s12">
+									
+									<input id="icon_prefix" type="text" class="get-value validate col s10" onkeydown = "if (event.keyCode == 13)
+									addTask(),
+									event.preventDefault();">
+
+									<a class="btn-floating btn-small waves-effect waves-light orange add-btn animated rubberBand"><i class="material-icons" onclick="addTask()">add</i></a>
+
+									<label for="icon_prefix">add new task</label>
+								</div>
+								</div>
+							</form>
+						</section>
+					
+						<div class="ul-overflow">
+							<ul class="list-task card panel flow-text">
+							</ul>
+						</div>
+
+					</div>
+				
+			
+
+		</section>
+
+
+		<!--  Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
